@@ -1,5 +1,6 @@
 # Modelisation-Scoring-API-Dashboard
-Résumé! Implémentation d'un modèle de scoring pour résoudre une problématique métier avec API &amp; Dashboard
+
+Résumé: Implémentation d'un modèle de scoring pour résoudre une problématique métier avec API &amp; Dashboard<br />
 Données utilisées (Dataset Kaggle): <a href="https://www.kaggle.com/c/home-credit-default-risk/data" title="Home Credit Default Risk" >https://www.kaggle.com/c/home-credit-default-risk</a>
 
 #### Description du projet:
