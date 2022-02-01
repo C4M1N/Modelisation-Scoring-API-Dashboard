@@ -24,15 +24,14 @@ Données utilisées (Dataset Kaggle): <a href="https://www.kaggle.com/c/home-cre
 #### Quick video tour:
 ---
 
-<a href="https://github.com/C4M1N/Modelisation-Scoring-API-Dashboard/blob/main/docs/powerpoint_presentation_projet_pret_a_depenser.pdf" title="powerpoint"> >>>right here<<< </a>
+
 
 #### Support de présentation
 ---
 
-<a href="https://github.com/C4M1N/Modelisation-Scoring-API-Dashboard/blob/main/docs/note_methodologique_-_projet_implementation_d_un_modele_de_scoring.pdf" title="methodological note "> >>>right here<<< </a>
-
+<a href="https://github.com/C4M1N/Modelisation-Scoring-API-Dashboard/blob/main/docs/powerpoint_presentation_projet_pret_a_depenser.pdf" title="powerpoint"> >>> Présentation powerpoint <<< </a>
+  
 #### Note méthodologique
 ---
-[note_methodologique_-_projet_implementation_d_un_modele_de_scoring.pdf](https://github.com/C4M1N/Modelisation-Scoring-API-Dashboard/files/7981077/note_methodologique_-_projet_implementation_d_un_modele_de_scoring.pdf)
 
-
+<a href="https://github.com/C4M1N/Modelisation-Scoring-API-Dashboard/blob/main/docs/note_methodologique_-_projet_implementation_d_un_modele_de_scoring.pdf" title="methodological note "> >>> Note méthodologique <<< </a>
