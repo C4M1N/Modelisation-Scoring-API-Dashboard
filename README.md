@@ -20,3 +20,8 @@ Données utilisées (Dataset Kaggle): <a href="https://www.kaggle.com/c/home-cre
 - Savoir expliquer une démarche de modélisation à des spécialistes et accessible à un public non averti.
 - Savoir réaliser un Dashboard intéractif avec API pour répondre à la demande.
 - Savoir proposer des améliorations ou des modifications à partir du travail réalisé.
+
+#### Quick video tour:
+---
+
+https://user-images.githubusercontent.com/88709284/152001929-9f9bdef0-ba31-4355-a329-e02419a7dcd6.mp4
