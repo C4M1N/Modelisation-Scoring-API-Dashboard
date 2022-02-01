@@ -15,8 +15,8 @@ Données utilisées (Dataset Kaggle): <a href="https://www.kaggle.com/c/home-cre
 #### Prérequis / Compétences:
 ---
 
-- Savoir s'approprier une problèmatique métier en tant que non spécialiste dans un domaine sans indications spécifiques.
+- Savoir s'approprier une problèmatique métier en tant que non spécialiste dans un nouveau domaine.
 - Savoir explorer et transformer des données de différentes sources / natures.
-- Savoir expliquer une démarche de modélisation (méthodologie) à des spécialistes et accessible à un public non averti.
+- Savoir expliquer une démarche de modélisation à des spécialistes et accessible à un public non averti.
 - Savoir réaliser un Dashboard intéractif avec API pour répondre à la demande.
 - Savoir proposer des améliorations ou des modifications à partir du travail réalisé.
