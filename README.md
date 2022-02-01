@@ -26,6 +26,10 @@ Données utilisées (Dataset Kaggle): <a href="https://www.kaggle.com/c/home-cre
 
 
 
+https://user-images.githubusercontent.com/88709284/152032017-d39ffd42-28f5-4c07-97f9-92ec802863a1.mp4
+
+
+
 #### Support de présentation
 ---
 
