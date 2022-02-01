@@ -25,3 +25,8 @@ Données utilisées (Dataset Kaggle): <a href="https://www.kaggle.com/c/home-cre
 ---
 
 https://user-images.githubusercontent.com/88709284/152002089-83eecdcc-9ca5-48af-8f2f-f090e20d4baa.mp4
+
+#### Support de présentation
+---
+
+[powerpoint_presentation_projet_pret_a_depenser.pdf](https://github.com/C4M1N/Modelisation-Scoring-API-Dashboard/files/7980562/powerpoint_presentation_projet_pret_a_depenser.pdf)
