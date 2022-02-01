@@ -24,4 +24,4 @@ Données utilisées (Dataset Kaggle): <a href="https://www.kaggle.com/c/home-cre
 #### Quick video tour:
 ---
 
-https://user-images.githubusercontent.com/88709284/152001929-9f9bdef0-ba31-4355-a329-e02419a7dcd6.mp4
+https://user-images.githubusercontent.com/88709284/152002089-83eecdcc-9ca5-48af-8f2f-f090e20d4baa.mp4
