@@ -30,3 +30,9 @@ https://user-images.githubusercontent.com/88709284/152002089-83eecdcc-9ca5-48af-
 ---
 
 [powerpoint_presentation_projet_pret_a_depenser.pdf](https://github.com/C4M1N/Modelisation-Scoring-API-Dashboard/files/7980562/powerpoint_presentation_projet_pret_a_depenser.pdf)
+
+#### Note méthodologique
+---
+[note_methodologique_-_projet_implementation_d_un_modele_de_scoring.pdf](https://github.com/C4M1N/Modelisation-Scoring-API-Dashboard/files/7981077/note_methodologique_-_projet_implementation_d_un_modele_de_scoring.pdf)
+
+
