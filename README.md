@@ -6,8 +6,8 @@ Données utilisées (Dataset Kaggle): <a href="https://www.kaggle.com/c/home-cre
 #### Description du projet:
 ---
 
-- Développement d'un modèle de scoring sur la probabilité de défaut de paiement d'un client par rapport à une demande prêt.
-- Utilisation de l'ensemble des données à disposition (7 tables de données relatives aux clients et à leur antériorité de crédit).
+- Développement d'un modèle de scoring sur la probabilité de défaut de paiement d'un client.
+- Utilisation de l'ensemble des données à disposition (7 tables de données).
 - Utilisation de modèles de prédiction (binaire -> "défaut / en règle").
 - Création d'une API et proposition d'un Dashboard d'aide à la décision.
 - Proposer d'éventuelles améliorations possibles sur base de ce qui a été réalisé.
