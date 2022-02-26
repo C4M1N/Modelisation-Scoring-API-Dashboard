@@ -8,7 +8,7 @@ script_dir = os.path.dirname(__file__)
 
 def load_df(filename):
 	# dataframe loading
-	with gzip.open(os.path.join(script_dir, '../data/' + filename), 'rb') as df:
+	with gzip.open(os.path.join(script_dir, f'../data/{filename}'), 'rb') as df:
 		df_custom_global_optim_std_w_id = pickle.load(df)
 
 	print(df_custom_global_optim_std_w_id.shape)
@@ -28,9 +28,7 @@ def load_df(filename):
 
 def retrieve_customers_id(df):
 
-	customer_id_list = df['SK_ID_CURR'].tolist()
-
-	return customer_id_list
+	return df['SK_ID_CURR'].tolist()
 
 
 def retrieve_customers_features(df, customer_id):

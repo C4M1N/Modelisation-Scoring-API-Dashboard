@@ -19,7 +19,7 @@ api_key = {"loan_app_key": "c30gs65de84zqs64qz98eex24sa1huk4765fg5dsda"}
 api_url = "http://127.0.0.1:5000/"
 
 # Import du logo du projet sur le dashboard
-img_logo = Image.open(script_dir + '/img/app_loan_logo.png')
+img_logo = Image.open(f'{script_dir}/img/app_loan_logo.png')
 st.sidebar.image(img_logo, width=200)  # use_column_width=auto
 selected_page = st.sidebar.selectbox("Page à afficher", ("Dashboard", "Modèles"))
 
@@ -63,7 +63,7 @@ if selected_page == "Modèles":
 		with st.spinner(warning_to_display):
 
 			# Envoi d'une requête POST pour changer de modèle de prédiction
-			url_model = api_url + "api/model_selection/"
+			url_model = f'{api_url}api/model_selection/'
 			resp_model_selected = requests.post(url=url_model, json={'model_selected': model_name}, params=api_key)
 
 			if resp_model_selected.status_code == requests.codes.ok:
@@ -85,18 +85,18 @@ if selected_page == "Modèles":
 
 				for idx, imp_feats in enumerate(most_imp_feats):
 					if len(imp_feats) > 15:
-						most_imp_feats[idx] = imp_feats[:15] + '...'
+						most_imp_feats[idx] = f'{imp_feats[:15]}...'
 
 				with col_feat_1:
-					st.write("""*""" + most_imp_feats[0] + """*""")
+					st.write(f"""*{most_imp_feats[0]}*""")
 				with col_feat_2:
-					st.write("""*""" + most_imp_feats[1] + """*""")
+					st.write(f"""*{most_imp_feats[1]}*""")
 				with col_feat_3:
-					st.write("""*""" + most_imp_feats[2] + """*""")
+					st.write(f"""*{most_imp_feats[2]}*""")
 				with col_feat_4:
 					# feat_displayed = '<span style="white space: none !important;">' + most_imp_feats[3] + '</span>'
 					# st.markdown(feat_displayed, unsafe_allow_html=True)
-					st.write("""*""" + most_imp_feats[3] + """*""")
+					st.write(f"""*{most_imp_feats[3]}*""")
 
 				st.text("")  # espacement
 
@@ -144,7 +144,7 @@ if selected_page == "Modèles":
 				ax.plot([0, 1], [0, 1], '--')
 				ax.set_xlabel("Taux de False positive")
 				ax.set_ylabel("Taux de True positive")
-				ax.set_title("Courbe ROC du modèle " + str(model_name))
+				ax.set_title(f"Courbe ROC du modèle {str(model_name)}")
 				st.pyplot(fig)
 
 			elif resp_model_selected.status_code == 403:
@@ -242,7 +242,7 @@ elif selected_page == "Dashboard":
 	@st.cache(ttl=60*5, max_entries=20, suppress_st_warning=True, show_spinner=False)
 	def loading_params_for_gui():
 		# Envoi d'une requête POST pour récupérer la liste des ID des clients disponibles
-		url_id = api_url + "api/customers_id/"
+		url_id = f'{api_url}api/customers_id/'
 		resp_customers_id = requests.post(url=url_id, params=api_key)
 
 		if resp_customers_id.status_code == requests.codes.ok:
@@ -829,10 +829,10 @@ elif selected_page == "Dashboard":
 				# st.write("feats_asc_order:", feats_asc_order)
 
 				if ajust_graph_colors:
-					feats_color_list = []
-					for feat_name in feats_asc_order:
-						feats_color_list.append(feats_color_dict[feat_name])
-					# st.write("feats_color_list:", feats_color_list)
+					feats_color_list = [
+					    feats_color_dict[feat_name] for feat_name in feats_asc_order
+					]
+						# st.write("feats_color_list:", feats_color_list)
 
 				ax.barh(df_bar['tick_labels'], df_bar['feats_values'], color=feats_color_list)
 
@@ -1148,7 +1148,8 @@ elif selected_page == "Dashboard":
 					max_feat_key = [key for key, value in feat_sum.items() if value == max_feat_value][0]
 					# print("max_feat_key :", max_feat_key)
 
-					explode_pie = tuple([0 if feat_name != max_feat_key else 0.1 for feat_name in feat_trad.values()])
+					explode_pie = tuple(0 if feat_name != max_feat_key else 0.1
+					                    for feat_name in feat_trad.values())
 					# print("explode_pie: ", explode_pie)
 
 					# Rappel: l'objet pie retourne patches, texts, autotexts
@@ -1180,8 +1181,7 @@ elif selected_page == "Dashboard":
 						label=list(feat_sum.keys())[1]
 					)
 
-					p_index = 0
-					for p in ax.patches:
+					for p_index, p in enumerate(ax.patches):
 						width, height = p.get_width(), p.get_height()
 						x, y = p.get_xy()
 						ax.text(
@@ -1195,8 +1195,6 @@ elif selected_page == "Dashboard":
 							weight='bold',
 							size=15
 						)
-						p_index += 1
-
 					plt.axis('off')
 
 				elif graph_type == 'bar':
@@ -1307,9 +1305,7 @@ elif selected_page == "Dashboard":
 			for elt_data in feat_data:
 				feat_values.update(elt_data)
 
-			feat_df = pd.DataFrame(feat_values, index=[0])  # on passe l'index 0 avec des valeurs scalaires
-
-			return feat_df
+			return pd.DataFrame(feat_values, index=[0])
 
 		pg_bar.progress(100)
 		pg_bar.empty()
